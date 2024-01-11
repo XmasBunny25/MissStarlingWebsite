@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+</head>
+<header>
+    <nav id="product-nav">
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img\logo.png" width="57px" height="57px">
+                </a>
+            </div>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="store.html">Store</a></li>
+        </ul>
+
+        <div class="shoppingCart">
+            <img src="img\shoppingcart.png" width="50" height="50">
+        </div>
+    </nav>
+    <button class="hamburger">
+      <div class="bar">
+
+      </div>
+  </button>
+</header>
+
+<!--Hamburger Menu-->
+
+<nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About me</a>
+    <a href="events.html">Events</a>
+    <a href="store.html">Store</a>
+    <a href="checkout.html">Shopping Cart</a>
+</nav>
+
+<body class="product-body">
+    <div class="small-container single-product">
+        <div class="row-store">
+            <div class="col-2">
+                <img src="img\albumcover-Starling.png" width="100%" id="ProductImg">
+
+
+            </div>
+            <div class="col-2">
+                <p>Home / Album</p>
+                <h1> Miss Starling Album</h1>
+                <h4>&euro;20.00</h4>
+                <input type="number" value="1" style="color:black;">
+                <a href="checkout.html" class="btn" style="color: black;">Add to cart</a>
+                <h3>Product Details</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Featured Prodcuts -->
+    <div class="small-container">
+        <div class="row-store">
+            <div class="col-1">
+                <a href="product.html"><img src="img/shirt-removebg-upscaled.png"></a>
+                <h4>Product A</h4>
+                <p>&euro;50.00</p>
+            </div>
+            <div class="col-1">
+                <img src="img/product-7-removebg.png">
+                <h4>Product B</h4>
+                <p>&euro;30.00</p>
+            </div>
+            <div class="col-1">
+                <img src="img/MrHat-removebg.png">
+                <h4>Product C</h4>
+                <p>&euro;50.00</p>
+            </div>
+            <div class="col-1">
+                <img src="img/shoebg.png">
+                <h4>Product D</h4>
+                <p>&euro;20.00</p>
+            </div>
+        </div>
+    </div>
+    <footer id="footer-product">
+        <div class="footer-content">
+
+
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/missstarlingmusic/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/miss_starling.music/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCPDtNmcz9bs-4bfB3Ia_X4A" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://open.spotify.com/artist/2znAhxI4cVeGBd7e3G2t1E?si=pbin100lRLe2-zquxmygFw" target="_blank"><i class="fa fa-spotify"></i></a></li>
+            </ul>
+        </div>
+        <div class="container-newsletter">
+            <div class="content-newsletter">
+                <form class="subscription">
+                    <input class="add-email" type="email" placeholder="subscribe@me.now">
+                    <button class="submit-email" type="button">
+                  <span class="before-submit">Subscribe</span>
+                  <span class="after-submit">Thank you for subscribing!</span>
+                 </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 Miss Starling.</p>
+        </div>
+    </footer>
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        SmallImg[0].onclick = function() {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function() {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function() {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function() {
+            ProductImg.src = SmallImg[3].src;
+        }
+    </script>
+</body>
+<script src="./js/index.js"></script>
+
+</html>

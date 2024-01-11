@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+</head>
+<header>
+    <nav id="cart-nav">
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/Pink_Logo.png" width="57px" height="57px">
+                </a>
+            </div>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="store.html">Store</a></li>
+        </ul>
+
+    </nav>
+    <button class="hamburger">
+      <div class="bar">
+
+      </div>
+  </button>
+</header>
+
+<!--Hamburger Menu-->
+
+<nav class="mobile-nav" id="mobile-cart">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About me</a>
+    <a href="events.html">Events</a>
+    <a href="store.html">Store</a>
+    <a href="checkout.html">Shopping Cart</a>
+</nav>
+
+
+<body id="cart-page-body">
+    <br>
+    <br><br><br><br><br><br>
+    <div class="cart-page">
+        <table>
+            <!--<tr >
+        <th style="color: white;">Product</th>
+        <th style="color: white;">Quantity</th>
+        <th style="color: white;">Subtotal</th>
+      </tr> -->
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img\shirt.png">
+                    </div>
+                    <p>Miss Starling fan merch</p>
+                    <small style="color: white;  font-size: 40px">Price: &euro;50.00</small>
+                    <br><br>
+                    <a href="" style="color: #ffffff;  font-size: 35px">Remove</a>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td style="color: #ffffff; font-size: 60px;">&euro;50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/albumcover-Starling.png">
+                    </div>
+                    <p>Miss Starling Music Album</p>
+                    <small style="color: white; font-size: 40px">Price: &euro;20.00</small>
+                    <br><br>
+                    <a href="" style="color: #ffffff; font-size: 35px">Remove</a>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td style="color: #ffffff; font-size: 60px;">&euro;20.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="img/ticket.png">
+                    </div>
+                    <p>Nijmegen Concert</p>
+                    <small style="color: white; font-size: 40px">Price: &euro;69.99</small>
+                    <br><br>
+                    <a href="" style="color: #ffffff; font-size: 35px">Remove</a>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td style="color: #ffffff; font-size: 60px;">&euro;69.99</td>
+            </tr>
+            <!--
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="img/buy-1.jpg">
+          </div>
+          <p>Red Printed Tshirt</p>
+          <small>Price: $30.00</small>
+          <br>
+          <a href="">Remove</a>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$30.00</td>
+      </tr> -->
+        </table>
+
+
+
+        <div class="total-price" style="color: #ffffff; font-size: 50px;">
+            <tr>
+                <td>Subtotal</td>
+                <td>&euro;139.99</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>&euro;40.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>&euro;179.99</td>
+            </tr>
+        </div>
+
+        <div class="button-checkout">
+            <a href="#" id="checkout-button" class="checkout-button">Checkout</a>
+        </div>
+
+    </div>
+    <!-- Checkout PopUp -->
+    <div class="bg-modal">
+        <div class="modal-contents">
+
+            <div class="close">+</div>
+
+            <form action="checkout-complete.html" method="get" class="popup-box">
+                <h1>Order Details</h1>
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Address" required>
+                <input type="email" placeholder="Email" required>
+                <input type="submit" class="order-button" value="Order"></input>
+                </a>
+            </form>
+
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <footer id="cart-footer">
+        <div class="footer-content">
+
+
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/missstarlingmusic/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/miss_starling.music/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCPDtNmcz9bs-4bfB3Ia_X4A" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://open.spotify.com/artist/2znAhxI4cVeGBd7e3G2t1E?si=pbin100lRLe2-zquxmygFw" target="_blank"><i class="fa fa-spotify"></i></a></li>
+            </ul>
+        </div>
+        <div class="container-newsletter">
+            <div class="content-newsletter">
+                <form class="subscription">
+                    <input class="add-email" type="email" placeholder="subscribe@me.now">
+                    <button class="submit-email" type="button">
+                  <span class="before-submit">Subscribe</span>
+                  <span class="after-submit">Thank you for subscribing!</span>
+                 </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 Miss Starling.</p>
+        </div>
+    </footer>
+
+</body>
+<script src="./js/index.js"></script>
+
+</html>

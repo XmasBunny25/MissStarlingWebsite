@@ -1,0 +1,1233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC';
+}
+
+
+/*navbar*/
+
+nav {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:active,
+nav ul li a:hover {
+    color: #111;
+    background: #fff;
+}
+
+nav .menu-btn i {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+.logo {
+    margin-top: 13px;
+}
+
+.shoppingCart {
+    position: fixed;
+    top: 10px;
+    float: right;
+    right: 30px;
+}
+
+
+/* home page */
+
+body {
+    margin: 0;
+    overflow-x: none;
+    height: 100%;
+}
+
+
+/* Home page Andreie and Hajar  11/01/2022*/
+
+#navSlideshow figure img {
+    width: 100%;
+    height: auto;
+    /* photos will float on the left while moving the slideshow*/
+    float: left;
+    margin-bottom: 1.5%;
+}
+
+#navSlideshow figure {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    left: 0;
+    /* here i will set the time that the first photo float to the other photo which is here in 13sec and i set it as infinite so the slideshow will not
+  stop floating to the left */
+}
+
+.readMoreSection {
+    padding-bottom: 10%;
+    margin-top: -25%;
+}
+
+.container div {
+    font-size: 1.8rem;
+    z-index: 0;
+}
+
+
+/*doodle*/
+
+.doodle {
+    z-index: 4;
+}
+
+.spotifyText {
+    text-align: center;
+    margin-top: -50%;
+    margin-bottom: 5%;
+    font-size: 70px;
+    color: white;
+}
+
+#aboutMePhoto {
+    z-index: 5;
+}
+
+#aboutMePhoto img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.textAndButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 30%;
+    margin-right: 60px;
+    z-index: 98;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#readMorebtn {
+    background-color: white;
+    color: black;
+    margin-top: 15px;
+    text-align: left;
+    border-radius: 30px;
+    padding: 8px 30px;
+    margin: 30px 0;
+}
+
+.musicSection {
+    padding-bottom: 550px;
+    text-align: center;
+}
+
+.col {
+    margin-bottom: 20px;
+}
+
+#index-body {
+    overflow-x: hidden;
+    background-color: #080808;
+}
+
+#index-nav {
+    background-color: #080808;
+}
+
+#index-mobile {
+    background-color: #080808da;
+}
+
+#events-nav {
+    background-color: rgb(43, 25, 59);
+}
+
+#events-footer {
+    background-color: rgb(43, 25, 59);
+}
+
+
+/*end of home page */
+
+
+/*footer*/
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #080808;
+    height: auto;
+    width: 100vw;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom {
+    width: 100vw;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 20px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+#events-footer {
+    background-color: rgb(43, 25, 59);
+}
+
+
+/* Events Page */
+
+#events-body {
+    overflow-x: hidden;
+    width: 100%;
+    background: url(../img/AfterlightImage-15.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.concert-box {
+    display: block;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 1000px;
+    margin-top: 80px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    z-index: 100;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.726);
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.styled-table th {
+    background-color: rgb(45, 2, 58);
+    font-size: 40px;
+}
+
+.styled-table td {
+    background-color: rgb(63, 2, 63);
+}
+
+.table-button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(62, 25, 99);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.31s ease 0s;
+    color: #fff;
+    min-width: 100px;
+}
+
+.table-button:hover {
+    background-color: rgb(106, 63, 150);
+}
+
+
+/* Hamburger Menu */
+
+#mobile-aboutme a {
+    background-color: #410101;
+}
+
+#mobile-aboutme a:hover {
+    background-color: #640000;
+}
+
+.hamburger {
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 99;
+    position: fixed;
+    float: right;
+    top: 20px;
+    right: 30px;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.mobile-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(43, 25, 59, 0.959);
+    padding-top: 120px;
+    z-index: 98;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: rgb(93, 54, 131);
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.7em;
+}
+
+#index-mobile a {
+    background-color: rgba(255, 255, 255, 0.884);
+    color: #000;
+}
+
+#index-mobile a:hover {
+    background-color: rgba(255, 255, 255, 0.938);
+}
+
+.mobile-nav a:hover {
+    background-color: rgb(106, 63, 150);
+}
+
+
+/* Newsletter on Footer*/
+
+.container-newsletter {
+    position: relative;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-newsletter {
+    width: 720px;
+    height: 50px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+.subscription {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.subscription .add-email {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 22px;
+}
+
+.subscription .submit-email {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100% - 2px);
+    width: 100px;
+    border: none;
+    border-radius: 60px;
+    outline: none;
+    margin: 1px;
+    padding: 0 20px;
+    cursor: pointer;
+    background: #009c60;
+    color: #FFFFFF;
+    transition: width .35s ease-in-out;
+    background: .35s ease-in-out;
+}
+
+.subscription.done .submit-email {
+    width: calc(100% - 2px);
+    background: #147700;
+}
+
+.subscription .submit-email .before-submit,
+.subscription .submit-email .after-submit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 38px;
+    font-size: 22px;
+    transition: visibility .35s ease-in-out, opacity .35s ease-in-out;
+}
+
+.subscription.done .submit-email .before-submit,
+.subscription:not(.done) .submit-email .after-submit {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.subscription .submit-email .after-submit {
+    transition-delay: .35s;
+}
+
+.subscription:not(.done) .submit-email .before-submit,
+.subscription.done .submit-email .after-submit {
+    visibility: visible;
+    opacity: 1;
+}
+
+.subscription .submit-email:hover {
+    background: #017549;
+}
+
+
+/* Mobile Responsive Events Page */
+
+@media screen and (min-width: 767px) {
+    .mobile-nav {
+        display: none;
+    }
+    .hamburger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav ul li {
+        display: none;
+    }
+    .button-checkout {
+        width: 180px;
+        height: 100px;
+        position: none;
+        text-align: center;
+        margin-bottom: -30%;
+    }
+    .content-newsletter {
+        width: 320px;
+    }
+    .shoppingCart {
+        display: none;
+    }
+    .concert-box h1 {
+        font-size: 50px;
+    }
+    .concert-box {
+        overflow-x: auto;
+    }
+    #events-body {
+        width: 100%;
+    }
+    .logo {
+        position: fixed;
+        left: 30px;
+    }
+    .table-button {
+        width: 70%;
+        height: auto;
+        font-size: 19px;
+    }
+    .cart-page table,
+    .cart-page table img,
+    .cart-page table a,
+    .cart-page table small,
+    .cart-page table td,
+    .cart-page table tr,
+    .total-price tr td {
+        width: 100%;
+        height: auto;
+        font-size: 5vw;
+    }
+    .doodle {
+        display: none;
+    }
+    #aboutMePhoto {
+        display: none;
+    }
+    #readMorebtn {
+        margin-bottom: 150px;
+    }
+    .textAndButton h1 {
+        text-align: center;
+    }
+    .styled-table thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+    tr {
+        border: 1px solid #ccc;
+        margin-bottom: 30px;
+    }
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    .container-text h1 {
+        font-size: 60px;
+    }
+    .go-back {
+        width: 200px;
+    }
+}
+
+
+/* about me page */
+
+.textBox {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    vertical-align: middle;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+
+
+/*Presiyan and Tom code*/
+
+
+/* about me page */
+
+.textBox {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    vertical-align: middle;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+
+
+/* Added by Tom van Weersch on 1/10/2022(Edited by Dimitar 11/01/2022) */
+
+#footer-aboutme {
+    background-color: #170000;
+}
+
+#nav-aboutme {
+    background-color: #170000;
+}
+
+#mobile-aboutme {
+    background-color: #170000dc;
+}
+
+#aboutme-body {
+    overflow-x: hidden;
+}
+
+
+/* Styling for the picture wall used in the About Me page  */
+
+.picturewall {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+/* Column styling for the picturewall  */
+
+.wallcolumn {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+
+/* Image styling for the pictures in the picture wall  */
+
+.wallcolumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns if the page isn't wide enough */
+
+@media screen and (max-width: 800px) {
+    .wallcolumn {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other for a better look on mobile screens */
+
+@media screen and (max-width: 600px) {
+    .wallcolumn {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Background Color of the About me page  */
+
+.AboutMeMain {
+    background-color: #1f0000;
+}
+
+
+/* Background Image used in the intro text of the About Me page  */
+
+.StarlingIntro {
+    background-image: url('../img/AfterlightImage 7.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*Store page css bellow*/
+
+.row-store {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+.small-container {
+    max-width: 2000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-1 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-1 img {
+    width: 100%;
+    border-radius: 11px;
+}
+
+.col-1 img:hover {
+    border: #fff 2px;
+    border-style: solid;
+    transition: 0.4 ease-in-out;
+}
+
+h4 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+p {
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+}
+
+h3 {
+    color: #fff;
+}
+
+.col-1 p {
+    font-size: 25px;
+}
+
+.col-1:hover {
+    transform: translateY(-5px);
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.row-2 {
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+.row-2 select {
+    font-size: 30px;
+    border: 1px solid #25112d;
+    padding: 5px;
+}
+
+.select:focus {
+    outline: none;
+}
+
+.page-btn {
+    margin: 0 auto 80px;
+}
+
+.page-btn span {
+    display: inline-block;
+    border: 1px solid #25112d;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover {
+    background: #c697d8;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.single-product {
+    margin-top: 80px;
+}
+
+.sigle-product .col2 img {
+    padding: 0;
+}
+
+.sigle-product .col2 {
+    padding: 20px;
+}
+
+.sigle-product h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.sigle-product input {
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #25112d;
+}
+
+input:focus {
+    outline: none;
+}
+
+.single-product .fa {
+    color: #25112d;
+    margin-left: 10px;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.col-2 h3 {
+    font-size: 40px;
+}
+
+.col-2 select {
+    font-size: 20px;
+}
+
+
+/*--Cart page--*/
+
+.checkout-button {
+    background-color: #00003D;
+    border: 2px;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 40px;
+    color: white;
+    margin-top: 10px;
+    font-size: 40px;
+    float: right;
+    margin-right: 4%;
+    margin-top: 2%;
+    transition: 0.4s ease;
+}
+
+.checkout-button:hover {
+    background-color: white;
+    color: #00003D;
+    border: 2px solid #00003D;
+    text-decoration: none;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cart-page {
+    margin: 20px auto;
+    width: 80%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: left;
+    padding: 25px;
+    color: #fff;
+    background: #25112d;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+td {
+    padding: 20px 50px;
+    font-size: 35px;
+    background-color: rgba(116, 115, 117, 0.363);
+}
+
+td input {
+    width: 80px;
+    height: 45px;
+    padding: 5px;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+td a {
+    color: #25112d;
+    font-size: 35px;
+}
+
+td img {
+    width: 250px;
+    height: 250px;
+    margin-right: 10px;
+}
+
+td p {
+    font-size: 45px;
+    color: black;
+}
+
+td small {
+    font-size: 35px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 35px;
+    padding-right: 50px;
+}
+
+.total-price table {
+    border-top: 3px solid #25112d;
+    width: 100%;
+    max-width: 350px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+.store-body {
+    background-color: #2b1636;
+    overflow-x: hidden;
+}
+
+#store-nav {
+    background-color: #170c1d;
+}
+
+#mobile-store {
+    background-color: #170c1de7;
+}
+
+#footer-store {
+    background-color: #170c1dd7;
+}
+
+.product-body {
+    background-color: #2b1636;
+    overflow-x: hidden;
+}
+
+#product-nav {
+    background-color: #170c1d;
+}
+
+#footer-product {
+    background-color: #170C1D;
+}
+
+#cart-page-body {
+    background-image: url(../img/AfterlightImage9.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+#cart-nav {
+    background-color: #00003D;
+}
+
+#mobile-cart {
+    background-color: #00003dd5;
+}
+
+#mobile-cart a {
+    background-color: rgb(28, 28, 121);
+}
+
+#mobile-cart a:hover {
+    background-color: rgb(35, 35, 150);
+}
+
+#cart-footer {
+    background-color: #00003D;
+}
+
+a:visited {
+    color: white;
+}
+
+
+/* The code above is Presiyan's and Tom's Please insert your css part below this line.*/
+
+
+/* Pop Up Modal */
+
+.bg-modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contents {
+    height: 450px;
+    width: 700px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.popup-box input {
+    margin: 15px auto;
+    display: block;
+    width: 80%;
+    padding: 8px;
+    border: 1px solid gray;
+    font-size: 30px;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 80px;
+    color: #333;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #666;
+}
+
+.popup-box h1 {
+    font-size: 50px;
+    color: black;
+}
+
+.order-button {
+    padding: 9px 25px;
+    background-color: #00003D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.31s ease 0s;
+    color: #fff;
+    min-width: 100px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.order-button:hover {
+    color: #00003D;
+    background-color: #fff;
+    border: 2px solid #00003D;
+}
+
+.opacity-text {
+    background-color: rgba(0, 0, 0, 0.486);
+    height: 500px;
+}
+
+.go-back {
+    padding: 9px 25px;
+    background-color: #00003D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.31s ease 0s;
+    color: #fff;
+    width: 300px;
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.go-back:hover {
+    color: #00003D;
+    background-color: #fff;
+    border: 2px solid #00003D;
+}
